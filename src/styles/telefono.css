@@ -1,0 +1,75 @@
+/* Contenedor principal del telefono */
+.telefono {
+    background-color: #000;
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Pantalla interior del telefono */
+  .telefono__pantalla {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Si se usa un iframe dentro de la pantalla */
+  .telefono__pantalla iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  
+  /* --- Parte superior del telefono: con circulitos de sensores --- */
+  .telefono__barra-superior {
+    height: 20px;
+    background-color: #222;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .telefono__sensor,
+  .telefono__camara {
+    width: 8px;
+    height: 8px;
+    background-color: #666;
+    border-radius: 50%;
+  }
+  
+  /* --- Parte inferior del telefono: un unico boton  --- */
+  .telefono__menu {
+    height: 30px;
+    background-color: #111;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .telefono__item {
+    width: 50px;
+    height: 5px;
+    background-color: #444;
+    border-radius: 3px;
+  }
+  
+  .telefono__pantalla {
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
