@@ -28,7 +28,7 @@
     display: block;
   }
   
-  /* --- Parte superior del telefono: con circulitos de sensores --- */
+  /* --- Parte superior del telefono (con circulitos como "sensores"): --- */
   .telefono__barra-superior {
     height: 20px;
     background-color: #222;
@@ -47,7 +47,7 @@
     border-radius: 50%;
   }
   
-  /* --- Parte inferior del telefono: un unico boton  --- */
+  /* --- Parte inferior del telefono:  --- */
   .telefono__menu {
     height: 30px;
     background-color: #111;

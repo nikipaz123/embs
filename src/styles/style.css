@@ -3,12 +3,20 @@ body {
   margin: 0;
   padding: 0;
   background: #f5f5f5;
+  overflow: hidden; /* Evita el scroll cuando la imagen se mueve */
 }
 
 h1 {
   text-align: center;
   margin: 1.5rem 0;
+  font-size: 2.5rem;            
+  font-weight: 700;           
+  letter-spacing: 1px;          /* Espaciado entre letras */
+  color: #111;                
+  border-bottom: 2px solid #0077cc; /* Línea azul debajo */
+  padding-bottom: 0.4rem;       /* Espacio entre texto y línea */
 }
+
 
 .flex-container {
   display: flex;
@@ -20,12 +28,21 @@ h1 {
   flex: 2.8;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-top: 2.2rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   scroll-behavior: smooth;
   direction: ltr;
   max-height: 600px;
+  background-color: #161515;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  width: 100vw;            /* Ocupa todo el ancho de la pantalla */
+  margin-left: -2rem;      /* Anula el padding izquierdo de .flex-container */
+  margin-right: -2rem;     /* Anula el padding derecho también */
+  position: relative;      /* Para evitar conflictos con otros elementos */
 }
+
 
 .news-grid {
   display: grid;
@@ -37,20 +54,23 @@ h1 {
 }
 
 .fixed-column {
-  flex: 1.7;
+  flex: 1.2;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 1.5rem;
+
+  margin-left: -2rem; /* Elimina el margen izquierdo del padding general */
 }
 
+
 .card {
-  background: white;
+  background: #ffffff; /* Fondo más oscuro para contraste con fondo negro */
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05); /* Sombra más suave y clara */
   overflow: hidden;
-  width: 160px;
-  min-height: 250px;
+  width: 150px; /* Más compacto en ancho */
+  min-height: 220px; /* Más compacto en alto */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,21 +84,22 @@ h1 {
 }
 
 .card-content {
-  padding: 0.6rem;
+  padding: 0.5rem; /* Reducido para compactar el contenido */
   text-align: center;
 }
 
 .card-content h2 {
-  font-size: 0.75rem;
-  margin: 0 0 0.4rem;
-  line-height: 1.1rem;
+  font-size: 0.7rem; /* Texto más chico */
+  margin: 0 0 0.3rem;
+  line-height: 1rem;
+  color: rgb(0, 0, 0); /* Texto blanco para fondo oscuro */
 }
 
 .card-content a {
   text-decoration: none;
-  color: #0077cc;
+  color: #00bfff; /* Color más vibrante para buen contraste */
   font-weight: bold;
-  font-size: 0.85rem;
+  font-size: 0.8rem; /* Más compacto */
   display: inline-block;
   margin-top: 0.3rem;
 }
@@ -105,3 +126,7 @@ h1 {
   background-color: white;
   border-radius: 0 !important;
 }
+
+/* BUNNYTRON */
+
+/*nada ye (tengo que aprender bien js)*/
